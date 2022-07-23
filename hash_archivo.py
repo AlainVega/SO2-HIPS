@@ -12,5 +12,5 @@ def hashear_archivo(ruta_arvhivo):
             fb = f.read(BLOCK_SIZE) # Read the next block from the file
     return file_hash.hexdigest()
 
-#hasheado = hashear_archivo("/etc/passwd")
-#print(hasheado)
+hasheado = hashear_archivo("/etc/passwd")
+print(hasheado)

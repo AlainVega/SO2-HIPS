@@ -13,7 +13,7 @@ def verificar_archivo(ruta_archivo, ruta_hash_antiguo):
         return False
 
 # Para probar tenes que tener el hash antiguo del archivo en el txt que le pasas
-if verificar_archivo("/etc/passwd", "para_comparar.txt"): # de prueba
+if verificar_archivo("/etc/passwd", "hash"): # de prueba
     print('los archivos son iguales')
 else:
     print('los archivos no son iguales')
