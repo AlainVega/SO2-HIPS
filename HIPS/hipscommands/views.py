@@ -1,9 +1,13 @@
 from django.shortcuts import render
+
+# Create your views here.
+
+# Create your views here.
 from django.http import HttpResponse
-from django.template.loader import get_template 
+from django.shortcuts import redirect, render
 from django.contrib.auth import authenticate,login
-def index(request):
-    return render(request,"login.html")
+def home(request):
+    return render(request,'index.html')
 def signin(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -11,6 +15,7 @@ def signin(request):
         print(username,password)
         user     = authenticate(username=username , password=password)
         if user is not None:
-            print("tumama")
             login(request,user)
             return render(request,"index.html")
+        
+    return render(request, "login.html")

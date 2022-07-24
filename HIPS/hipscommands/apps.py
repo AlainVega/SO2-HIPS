@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
-class HipsloginConfig(AppConfig):
+
+class HipscommandsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'hipslogin'
+    name = 'hipscommands'
