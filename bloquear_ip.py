@@ -28,5 +28,5 @@ def bloquear_ip(ip):
             resultado = subprocess.run(['iptables', '-A' ,'INPUT', '-s',  ip, '-j','DROP'])
     
 #prueba
-ip = '80.80.80.80'
-bloquear_ip(ip)
+#ip = '80.80.80.80'
+#bloquear_ip(ip)
